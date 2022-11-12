@@ -10,7 +10,7 @@ let accounts;
 let inbox;
 const INITIAL_STRING = "Hi there!";
 
-before(async () => {
+beforeEach(async () => {
     // Get a list of all accounts
     // Every function we call with web3 is asynchronous in nature which means it's going to return Promise
     accounts = await web3.eth.getAccounts()
